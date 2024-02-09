@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice-guided 3D Modeling</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Franklin&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div id="container">
+        <div id="heading">Voice Craft</div>
+        <button id="startListening"><i class="fa-solid fa-microphone"></i></button>
+        <button id="startWebcam"><i class="fa-solid fa-video"></i></button>
+        <div id="textBox"></div>
+        <div id="textBox1"></div>
+        <video id="webcam" width="640" height="480" autoplay></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
